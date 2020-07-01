@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="1304dp"
+        android:layout_height="700dp"
         android:background="#FFFF00"
         android:gravity="center"
         android:text="@string/zero"
@@ -24,20 +24,24 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="638dp"
-        android:layout_height="wrap_content"
+        android:layout_width="416dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/colorPrimary"
         android:onClick="showToast"
         android:text="@string/Toast_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="8dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="639dp"
-        android:layout_height="wrap_content"
+        android:layout_width="428dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="184dp"
         android:background="@color/colorPrimary"
         android:onClick="countUp"
         android:text="@string/count_text"
